@@ -1,0 +1,186 @@
+html {
+  width: 1000px;
+  /* the background pictures position and size moving the picture from point to another while repeathing the picture*/
+  background-image: url(2.png), url(1.png);
+  background-repeat: no-repeat, repeat-x;
+  background-position: 100% 1%, 0 0%, 0 0;
+  background-size: 50px, 1200px;
+  animation: 50s para infinite linear;
+  padding-top: 11%;
+  padding-left: 15%;
+  background-color: rgb(38, 65, 78);
+}
+@keyframes para {
+  100% {
+    background-position: 100% 1%, -800px 0%;
+  }
+}
+img {
+  background-color: hsla(200, 40%, 30%, 0.4);
+  margin-right: 190px;
+}
+body {
+  /*background-color: hsla(200, 40%, 30%, 0.4);*/
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: -14%;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#pagenum {
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+p {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.p1 {
+  color: green;
+}
+.declaration {
+  text-align: center;
+}
+
+.form {
+  background: white;
+  padding: 3em;
+  height: auto;
+  width: 30%;
+  border-radius: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.error {
+  color: #ff0000;
+}
+
+/* css for the buttons*/
+.button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  background-color: rgba(202, 202, 202, 0.774);
+  border: white;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+}
+/* hover over for the button */
+.button:hover {
+  color: black;
+  background-color: lawngreen;
+}
+
+/*table style*/
+#friendtable {
+  table-layout: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 00px;
+  width: 900px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#friendtable td {
+  border: 2px solid rgb(3, 3, 3);
+  padding: 12px;
+}
+
+#friendtable tr:hover {
+  background-color: #ddd;
+}
+.centerlinks {
+  display: inline-block;
+}
+
+/* color for the about me dot points*/
+ul {
+  color: orange;
+  font-size: larger;
+  font-weight: 800;
+}
+.a {
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 20px;
+}
+.a:link {
+  color: red;
+}
+
+/* visited link */
+.a:visited {
+  color: rgb(0, 197, 0);
+}
+
+/* mouse over link */
+.a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.a:active {
+  color: blue;
+}
+
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: black;
+  padding-top: -20px;
+  margin-bottom: 30px;
+}
+
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid red;
+}
+
+.input-container textarea {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: black;
+}
+
+.input-container textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid red;
+}
+.input-container label {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
